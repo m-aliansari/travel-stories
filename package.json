@@ -1,0 +1,22 @@
+{
+  "name": "travel-stories",
+  "version": "1.0.0",
+  "description": "Share your travel experience with travel stories.",
+  "main": "server/dist/main.js",
+  "scripts": {
+    "install": "cd client && npm install && npm run build && cd ../server && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-aliansari/travel-stories"
+  },
+  "author": "Muhammad Ali Ansari",
+  "license": "ISC",
+  "engines": {
+    "node": "16.9.1"
+  },
+  "cacheDirectories": [
+    "client/node_modules",
+    "server/node_modules"
+  ]
+}
