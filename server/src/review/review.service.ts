@@ -27,7 +27,6 @@ export class ReviewService {
     review.Favorite = false;
     review.user = await this.userService.findUserById(userId);
 
-    console.log(review);
     return this.reviewRepository.save(review);
   }
   findReviewById(reviewid: number) {

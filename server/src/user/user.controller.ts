@@ -30,8 +30,6 @@ export class UserController {
   @Get()
   @UseGuards(new RoleGuard(Constants.ROLES.ADMIN_ROLE))
   findAll(@Req() req) {
-    console.log(req.user);
-
     return this.userService.findAll();
   }
 
@@ -39,8 +37,6 @@ export class UserController {
   @Delete(':id')
   @UseGuards(new RoleGuard(Constants.ROLES.ADMIN_ROLE))
   remove(@Param('id') id: string, @Req() req) {
-    console.log(req.user);
-
     return this.userService.remove(+id);
   }
 }

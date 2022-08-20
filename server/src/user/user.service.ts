@@ -28,9 +28,6 @@ export class UserService {
   }
 
   findUserById(id: number) {
-    // let newId: ObjectId = new ObjectId(id); //Is Line ne jeena haram kardiya hai. Saala ObjectId
-    // console.log(newId);
-
     return this.userRepository.findOneOrFail({
       where: { id: id },
     });

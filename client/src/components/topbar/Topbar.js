@@ -78,7 +78,6 @@ function Topbar(props) {
               <Link
                 to="/login"
                 className="text-black hover:text-red-600 hover:cursor-pointer max-w-[100px] ml-2 transition-[500ms]"
-                // className="bg-[#FFA902] ml-10 text-black text-lg rounded-md p-3 px-5 drop-shadow-xl font-semibold hover:bg-transparent hover:border-2 hover:border-[#FFA902] hover:text-white"
               >
                 <button
                   onClick={() => {

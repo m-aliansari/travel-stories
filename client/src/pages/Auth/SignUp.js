@@ -24,7 +24,6 @@ export default function SignUp(props) {
       email: emailRef.current.value,
       password: passwordRef.current.value,
     });
-    console.log(response.data);
     toast.success("Account created successfully");
     navigate("/login");
   };

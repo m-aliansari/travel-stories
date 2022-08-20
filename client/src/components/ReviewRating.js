@@ -38,7 +38,6 @@ export default function ReviewRating() {
           getLabelText={getLabelText}
           onChange={(event, newValue) => {
             setValue(newValue);
-            console.log(value);
           }}
           onChangeActive={(event, newHover) => {
             setHover(newHover);

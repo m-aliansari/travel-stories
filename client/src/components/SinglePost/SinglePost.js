@@ -11,19 +11,6 @@ import { toast } from "react-toastify";
 
 const MAX_LENGTH = 300;
 export default function SinglePost(props) {
-  // const [image, setImage] = useState(null);
-
-  // const getImageByReviewId = async () => {
-  //   const response = await custom_axios.get(
-  //     ApiConstants.REVIEW.GET_IMAGE(parseInt(props.id)),
-  //     { headers: { Authorization: "Bearer " + localStorage.getItem("token") } }
-  //   );
-  //   console.log("id :: ", +props.id);
-  //   console.log("This is response ", +response.text());
-  //   // const resultImg = URL.createObjectURL(response.blob());
-  //   setImage(response.data);
-  // };
-
   useEffect(() => {
     const scrollPosition = sessionStorage.getItem("scrollPosition");
     if (scrollPosition) {
